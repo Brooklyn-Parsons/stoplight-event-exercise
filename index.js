@@ -1,7 +1,7 @@
 let stopButton = document.getElementById("stopButton");
 let stopLight = document.getElementById("stopLight");
 
-stopButton.addEventListener("click", function () {
+stopButton.addEventListener("click", function (event) {
   stopLight.classList.toggle("stop");
   let clickRed = (stopLight.classList.contains("stop"));
   if (clickRed === true){
@@ -15,7 +15,7 @@ stopButton.addEventListener("click", function () {
 let slowButton = document.getElementById("slowButton");
 let slowLight = document.getElementById("slowLight");
 
-slowButton.addEventListener("click", function () {
+slowButton.addEventListener("click", function (event) {
   slowLight.classList.toggle("slow");
   let clickYellow = (slowLight.classList.contains("slow"));
   if (clickYellow === true){
@@ -28,7 +28,7 @@ slowButton.addEventListener("click", function () {
 let goButton = document.getElementById("goButton");
 let goLight = document.getElementById("goLight");
 
-goButton.addEventListener("click", function () {
+goButton.addEventListener("click", function (event) {
   goLight.classList.toggle("go");
   let clickGreen = (goLight.classList.contains("go"));
   if (clickGreen === true){
